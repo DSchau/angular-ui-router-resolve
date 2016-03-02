@@ -1,6 +1,6 @@
 {
   "name": "angular-ui-router-resolve",
-  "version": "0.0.1",
+  "version": "0.0.1-rc.0",
   "description": "An angular module to add resolves to $rootScope",
   "main": "dist/angular-ui-router-resolve.js",
   "jsnext:main": "src/index.js",
