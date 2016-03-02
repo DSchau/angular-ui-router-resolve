@@ -21,8 +21,8 @@ export default {
       {
         test: /\.js$/,
         loaders: [
-          'babel',
-          'ng-annotate'
+          'ng-annotate',
+          'babel'
         ]
       }
     ],
