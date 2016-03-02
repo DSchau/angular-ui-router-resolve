@@ -1,11 +1,9 @@
-import $resolveProvider from './$resolve/provider';
-
-import stateConfig from './decorator.config';
+import $resolvesProvider from './$resolves/provider';
 
 const module = angular.module('ui.router.$resolve', [
   'ui.router'
 ])
-.config(stateConfig)
-.provider('$resolve', $resolveProvider);
+.provider('$resolves', $resolvesProvider)
+.run(($resolves) => {});
 
 export default module.name;

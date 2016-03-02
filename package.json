@@ -2,7 +2,8 @@
   "name": "angular-ui-router-resolve",
   "version": "1.0.0",
   "description": "An angular module to add resolves to $rootScope",
-  "main": "dist/angular-ui-router-$resolve.js",
+  "main": "dist/angular-ui-router-resolve.js",
+  "jsnext:main": "src/index.js",
   "directories": {
     "test": "test"
   },
@@ -22,7 +23,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --"
+    "prepublish": "npm run webpack",
+    "webpack": "webpack"
   },
   "keywords": [
     "angular",
