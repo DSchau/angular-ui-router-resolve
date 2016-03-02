@@ -29,5 +29,9 @@
     "resolve"
   ],
   "author": "Dustin Schau",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DSchau/angular-ui-router-resolve"
+  },
   "license": "MIT"
 }
