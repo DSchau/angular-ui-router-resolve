@@ -1,9 +1,14 @@
+import webpack from 'webpack';
+
 import path from 'path';
+
+const { name } = require('./package.json');
 
 export default {
   entry: {
-    'angular-ui-router-resolve': [ path.resolve('./src/') ]
+    [name]: [ path.resolve('./src/') ]
   },
+  devtool: '#source-map',
   output: {
     filename: '[name].js',
     path: 'dist',
@@ -22,5 +27,6 @@ export default {
       }
     ],
     postLoaders: []
-  }
+  },
+  plugins: []
 };

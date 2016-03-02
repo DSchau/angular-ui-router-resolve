@@ -12,7 +12,7 @@ export default class $resolvesService {
   }
 
   $$init() {
-    return this.$rootScope.$on('$stateChangeSuccess', () => {
+    return this.$rootScope.$on(this.defaults.ev, () => {
       let globals;
       try {
         globals = this.$state.$current.locals.globals;
