@@ -4,6 +4,8 @@ const module = angular.module('ui.router.$resolve', [
   'ui.router'
 ])
 .provider('$resolves', $resolvesProvider)
-.run(($resolves) => {});
+.run(function($resolves) {
+  'ngInject';
+});
 
 export default module.name;
