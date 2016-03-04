@@ -1,10 +1,10 @@
-import webpack from 'webpack';
+const webpack = require('webpack');
 
-import path from 'path';
+const path = require('path');
 
-const { name } = require('./package.json');
+const name = require('./package.json').name;
 
-export default {
+module.exports = {
   entry: {
     [name]: [ path.resolve('./src/') ]
   },
