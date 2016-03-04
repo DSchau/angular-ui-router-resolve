@@ -1,7 +1,6 @@
 # angular-ui-router-resolve
 
 [![Build Status](https://img.shields.io/npm/v/angular-ui-router-resolve.svg)](https://www.npmjs.com/package/angular-ui-router-resolve)
-
 [![David](https://img.shields.io/david/DSchau/angular-ui-router-resolve.svg)](https://david-dm.org/DSchau/angular-ui-router-resolve)
 
 A module to shim support for exposing resolves (via `$stateProvider`) on a $rootScope object, as well as exposing a `$resolves` service. This is particularly useful in a component based architecture, where components are used as the main routing piece (which have their own controller decoupled from `$stateProvider` controller).
